@@ -160,7 +160,7 @@
 
 .gridContent {
     border: 0.5px #f6f6f6 solid;
-    width: 270px;
+    width: 260px;
     cursor: pointer;
     transition: transform 213ms ease-out;
 }
