@@ -1,0 +1,125 @@
+<mvc:View controllerName="bookshop.controller.Homepage"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns:grid="sap.ui.layout.cssgrid"
+    xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.f">
+   <Page showHeader="true">
+        <customHeader>
+            <Toolbar >
+                
+                    <HBox class="profileContainerStyle">
+                        <Button text="Profile" icon="sap-icon://person-placeholder" type="Unstyled" class="sapUiSmallMarginEnd profileButtonStyle" />
+                        <Button text="Logout" icon="sap-icon://log" type="Unstyled" class="profileButtonStyle" />
+                    </HBox>
+
+                    <ToolbarSpacer/>
+
+                    <HBox class="userTypeContainerStyle">
+                        <Button text="Publish" icon="sap-icon://sales-order-item" type="Unstyled" class="sapUiSmallMarginEnd userTypeBottonStyle" />
+                        <Button text="Reader" icon="sap-icon://education" type="Unstyled" class="userTypeBottonStyle" />
+                    </HBox>
+                
+            </Toolbar>
+        </customHeader>
+        <content>
+            <VBox>
+                <Panel width="100%" class="carousalStyle" accessibleRole="Region">
+                    <content >
+                        <VBox class="carousalContentStyle">
+                            <Toolbar class="carousalToolbarStyle">
+                                <HBox>
+                                    <core:Icon src="sap-icon://course-book" color="#ffffff" class="sapUiTinyMarginEnd" />
+                                    <Title text="BOOKS" class="carousalTitleStyle" />
+                                </HBox>
+
+                                <ToolbarSpacer/>
+
+                                <SearchField width="30%" liveChange=".onSearch" class="sapUiSmallMarginEnd" />
+
+                                <HBox class="basketHBoxStyle" >
+                                    <Button text="My Basket" type="Unstyled" class="basketButtonStyle" />
+                                    <core:Icon src="sap-icon://cart-full" color="#ffffff" />
+                                </HBox>
+                                
+                            </Toolbar>
+
+                            <FlexBox class="carousalBookDetailContainer" >
+                                <VBox width="60%" class="sapUiMediumMarginEnd">
+                                    <Title text="Untouched Love" class="carousalBookStyle" />
+                                    <Text text="by Neha Bhagat" class="carousalBookAuthorStyle" />
+                                    <Label text="Dont compare your book to other books. I see this all the time, and all it does is make the book (and the author) immediately look inferior. Plus, a reader may hate the book you are comparing yourself to and youll lose them."
+                                    class="carousalBookDescriptionStyle" />
+                                </VBox>
+
+                                <HBox >
+                                    <Image src="https://m.media-amazon.com/images/I/715qi-cIbML._SL1500_.jpg" class="carousalBookImageStyle" ></Image>
+                                    <Image src="https://m.media-amazon.com/images/I/81RR1OstVmL._SL1500_.jpg" class="carousalBookImageStyle" ></Image>
+                                    <Image src="https://m.media-amazon.com/images/I/71sBtM3Yi5L._SL1360_.jpg" class="carousalBookImageStyle" ></Image>
+                                    <Image src="https://m.media-amazon.com/images/I/811SCV956rL._SL1500_.jpg" class="carousalBookImageStyle" ></Image>
+                                </HBox>
+                            </FlexBox>
+                        </VBox>
+
+                    </content>
+                </Panel>
+
+                <VBox class="booksContainerStyle">
+                    <Toolbar class="bookTabStyle" >
+                        <IconTabHeader mode="Standard" select="onTabSelection" selectedKey="new" class="sapUiSmallMarginBeginEnd tabsContainerStyle">
+                            <items>
+                                <IconTabFilter key="new" text="New Arrival" />
+                                <IconTabFilter key="deals" text="Deals" />
+                                <IconTabSeparator />
+                                <IconTabFilter key="books" text="Books" />
+                                <IconTabFilter key="ebooks" text="E-Books"/>
+                                <IconTabFilter key="audio" text="Audio" />
+                                <IconTabFilter key="events" text="Events"/>
+                                <IconTabSeparator />
+                                <IconTabFilter key="education" text="Education" />
+                                <IconTabFilter key="interests" text="Interests"/>
+                                <IconTabFilter key="role" text="Role" />
+                                <IconTabFilter key="work" text="Work"/>
+                            </items>
+                        </IconTabHeader>
+                    </Toolbar>
+
+                    <Panel class="bookContainerPanelStyle" >
+                        <HeaderContainer >
+                            <Title id="tabTitle" text="New Arrival" class="tabTitleStyle" />
+                        </HeaderContainer>
+                    </Panel>
+
+                    <f:GridList items="{/booksData}" id="gridList"
+                       visible="true" class="gridListStyle" >
+                        <f:customLayout>
+                            <grid:GridBasicLayout gridAutoFlow="Column" />
+                        </f:customLayout>
+                        <f:GridListItem class="gridContent" >
+                            <VBox class="sapUiSmallMargin">
+                                <layoutData>
+                                    <FlexItemData growFactor="1" shrinkFactor="0" /> <!-- Don't shrink below minimum size. Fill space if available. -->
+                                </layoutData>
+
+                                <Image src="{image_url}" class="bookImageStyle"> </Image>
+                                <VBox >
+                                    <Title text="{title}" wrapping="true" class="sapUiTinyMarginTop" />
+                                    <Label text="{author}"></Label>
+
+                                    <HBox alignContent="Center">
+                                        <!-- <Label text="Price" class="sapUiTinyMarginEnd priceLabelStyle" ></Label> -->
+                                        <Text text="$ {price}" class="priceTextSytle" />
+                                    </HBox>
+                                    <HBox alignContent="Center">
+                                        <Label text="Rating" class="sapUiTinyMarginEnd priceLabelStyle" ></Label>
+                                        <Text text="{rating}"  class="ratingTextSytle" />
+                                    </HBox>
+
+                                </VBox>
+                                
+                                
+                            </VBox>
+                        </f:GridListItem>
+                    </f:GridList>
+                </VBox>
+            </VBox>
+        </content>
+   </Page>
+</mvc:View>

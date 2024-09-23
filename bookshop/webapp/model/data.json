@@ -1,0 +1,211 @@
+ { 
+  "booksData" : [
+  {
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "image_url": "https://munchweb.com/wp-content/uploads/2017/10/rich-dad-poor-dad.jpg",
+      "description": "A classic novel of the American dream, set in the 1920s.",
+      "rating": 4.5,
+      "price": 10.99,
+      "review": "A beautifully written story about love and loss."
+  },
+  {
+      "title": "1984",
+      "author": "George Orwell",
+      "image_url": "https://munchweb.com/wp-content/uploads/2017/10/rich-dad-poor-dad.jpg",
+      "description": "A dystopian novel about totalitarianism and surveillance.",
+      "rating": 4.8,
+      "price": 12.50,
+      "review": "Chilling and thought-provoking; a must-read."
+  },
+  {
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "image_url": "https://munchweb.com/wp-content/uploads/2017/10/rich-dad-poor-dad.jpg",
+      "description": "A novel about racial injustice and moral growth.",
+      "rating": 4.7,
+      "price": 11.99,
+      "review": "Powerful and moving; unforgettable characters."
+  },
+  {
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "image_url": "https://example.com/pride-and-prejudice.jpg",
+      "description": "A romantic novel that explores the themes of love and class.",
+      "rating": 4.6,
+      "price": 9.99,
+      "review": "Witty and romantic; Austen's best work."
+  },
+  {
+      "title": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "image_url": "https://example.com/catcher-in-the-rye.jpg",
+      "description": "A novel about teenage rebellion and alienation.",
+      "rating": 4.2,
+      "price": 10.50,
+      "review": "A timeless exploration of adolescence."
+  },
+  {
+      "title": "Moby Dick",
+      "author": "Herman Melville",
+      "image_url": "https://example.com/moby-dick.jpg",
+      "description": "An epic tale of obsession and revenge on the high seas.",
+      "rating": 4.1,
+      "price": 12.00,
+      "review": "A challenging yet rewarding read."
+  },
+  {
+      "title": "War and Peace",
+      "author": "Leo Tolstoy",
+      "image_url": "https://example.com/war-and-peace.jpg",
+      "description": "A historical novel that weaves together personal and political narratives.",
+      "rating": 4.4,
+      "price": 14.99,
+      "review": "A masterpiece of world literature."
+  },
+  {
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "image_url": "https://example.com/the-hobbit.jpg",
+      "description": "A fantasy adventure that introduces the world of Middle-earth.",
+      "rating": 4.6,
+      "price": 8.99,
+      "review": "A delightful journey for readers of all ages."
+  },
+  {
+      "title": "Fahrenheit 451",
+      "author": "Ray Bradbury",
+      "image_url": "https://example.com/fahrenheit-451.jpg",
+      "description": "A dystopian novel about a future where books are banned.",
+      "rating": 4.3,
+      "price": 11.50,
+      "review": "A powerful commentary on censorship."
+  },
+  {
+      "title": "Brave New World",
+      "author": "Aldous Huxley",
+      "image_url": "https://example.com/brave-new-world.jpg",
+      "description": "A dystopian story about a technologically advanced society.",
+      "rating": 4.5,
+      "price": 12.00,
+      "review": "Provocative and disturbing in its relevance."
+  },
+  {
+      "title": "The Alchemist",
+      "author": "Paulo Coelho",
+      "image_url": "https://example.com/the-alchemist.jpg",
+      "description": "A philosophical tale about pursuing one's dreams.",
+      "rating": 4.7,
+      "price": 9.99,
+      "review": "Inspirational and beautifully written."
+  },
+  {
+      "title": "Jane Eyre",
+      "author": "Charlotte Brontë",
+      "image_url": "https://example.com/jane-eyre.jpg",
+      "description": "A gothic romance novel about love and independence.",
+      "rating": 4.4,
+      "price": 10.50,
+      "review": "A compelling narrative of strength and resilience."
+  },
+  {
+      "title": "The Picture of Dorian Gray",
+      "author": "Oscar Wilde",
+      "image_url": "https://example.com/picture-of-dorian-gray.jpg",
+      "description": "A philosophical novel exploring vanity and moral duplicity.",
+      "rating": 4.3,
+      "price": 11.99,
+      "review": "Wilde's wit shines in this timeless tale."
+  },
+  {
+      "title": "The Brothers Karamazov",
+      "author": "Fyodor Dostoevsky",
+      "image_url": "https://example.com/brothers-karamazov.jpg",
+      "description": "A profound exploration of faith, free will, and morality.",
+      "rating": 4.5,
+      "price": 13.50,
+      "review": "A deep and challenging read."
+  },
+  {
+      "title": "The Road",
+      "author": "Cormac McCarthy",
+      "image_url": "https://example.com/the-road.jpg",
+      "description": "A post-apocalyptic tale of survival and love.",
+      "rating": 4.4,
+      "price": 12.99,
+      "review": "Haunting and beautifully written."
+  },
+  {
+      "title": "The Kite Runner",
+      "author": "Khaled Hosseini",
+      "image_url": "https://example.com/the-kite-runner.jpg",
+      "description": "A story of friendship and redemption set in Afghanistan.",
+      "rating": 4.7,
+      "price": 11.50,
+      "review": "Emotionally gripping and beautifully told."
+  },
+  {
+      "title": "The Book Thief",
+      "author": "Markus Zusak",
+      "image_url": "https://example.com/the-book-thief.jpg",
+      "description": "A story narrated by Death about a girl in Nazi Germany.",
+      "rating": 4.8,
+      "price": 13.00,
+      "review": "Unique and heart-wrenching."
+  },
+  {
+      "title": "The Da Vinci Code",
+      "author": "Dan Brown",
+      "image_url": "https://example.com/da-vinci-code.jpg",
+      "description": "A thriller that blends history, art, and conspiracy.",
+      "rating": 4.2,
+      "price": 9.99,
+      "review": "A fast-paced and engaging read."
+  },
+  {
+      "title": "The Catch-22",
+      "author": "Joseph Heller",
+      "image_url": "https://example.com/catch-22.jpg",
+      "description": "A satirical novel about the absurdity of war.",
+      "rating": 4.5,
+      "price": 10.99,
+      "review": "Clever and thought-provoking."
+  },
+  {
+      "title": "The Perks of Being a Wallflower",
+      "author": "Stephen Chbosky",
+      "image_url": "https://example.com/perks-of-being-a-wallflower.jpg",
+      "description": "A coming-of-age story told through letters.",
+      "rating": 4.4,
+      "price": 12.00,
+      "review": "Relatable and heartfelt."
+  },
+  {
+      "title": "Little Fires Everywhere",
+      "author": "Celeste Ng",
+      "image_url": "https://example.com/little-fires-everywhere.jpg",
+      "description": "A novel about family dynamics and social issues.",
+      "rating": 4.5,
+      "price": 11.99,
+      "review": "Compelling and thought-provoking."
+  },
+  {
+      "title": "Circe",
+      "author": "Madeline Miller",
+      "image_url": "https://example.com/circe.jpg",
+      "description": "A retelling of the story of Circe, a figure from Greek mythology.",
+      "rating": 4.6,
+      "price": 13.50,
+      "review": "Richly woven and enchanting."
+  },
+  {
+      "title": "The Night Circus",
+      "author": "Erin Morgenstern",
+      "image_url": "https://example.com/night-circus.jpg",
+      "description": "A magical tale of a competition between two young illusionists.",
+      "rating": 4.5,
+      "price": 14.99,
+      "review": "Visually stunning and imaginative."
+  }
+]
+}
