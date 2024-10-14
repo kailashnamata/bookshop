@@ -32,7 +32,13 @@
 
                                 <ToolbarSpacer/>
 
-                                <SearchField width="30%" liveChange=".onSearch" class="sapUiSmallMarginEnd" />
+                                <SearchField width="30%" id="searchField" liveChange=".onSearch" suggest=".onSuggest" suggestionItems="{
+				path: '/booksData',
+				sorter: { path: 'title' }
+			}" enableSuggestions="true" class="sapUiSmallMarginEnd" >
+            <SuggestionItem text="{title}"  />
+
+                                 </SearchField>
 
                                 <HBox class="basketHBoxStyle" >
                                     <Button text="My Basket" type="Unstyled" class="basketButtonStyle" />

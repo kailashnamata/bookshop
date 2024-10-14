@@ -122,6 +122,7 @@
     border-bottom: none !important; 
     flex-wrap: wrap;
     margin-top: 10px;
+    height: max-content;
 }
 
 .booksContainerStyle {
@@ -135,6 +136,7 @@
 }
 .tabsContainerStyle {
     flex-wrap: wrap;
+    box-shadow: none;
 }
 
 .tabsContainerStyle.sapMITBTextOnly .sapMITBFilterDefault.sapMITBSelected .sapMITBText {

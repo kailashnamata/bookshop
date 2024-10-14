@@ -7,205 +7,228 @@
       "description": "A classic novel of the American dream, set in the 1920s.",
       "rating": 4.5,
       "price": 10.99,
-      "review": "A beautifully written story about love and loss."
+      "review": "A beautifully written story about love and loss.",
+      "type": "New Arrival"
   },
   {
       "title": "1984",
       "author": "George Orwell",
-      "image_url": "https://munchweb.com/wp-content/uploads/2017/10/rich-dad-poor-dad.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/41nCe4AN0wL._SL500_.jpg",
       "description": "A dystopian novel about totalitarianism and surveillance.",
       "rating": 4.8,
       "price": 12.50,
-      "review": "Chilling and thought-provoking; a must-read."
+      "review": "Chilling and thought-provoking; a must-read.",
+      "type": "New Arrival"
   },
   {
       "title": "To Kill a Mockingbird",
       "author": "Harper Lee",
-      "image_url": "https://munchweb.com/wp-content/uploads/2017/10/rich-dad-poor-dad.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51OCa5xBMrL.jpg",
       "description": "A novel about racial injustice and moral growth.",
       "rating": 4.7,
       "price": 11.99,
-      "review": "Powerful and moving; unforgettable characters."
+      "review": "Powerful and moving; unforgettable characters.",
+      "type": "Deals"
   },
   {
       "title": "Pride and Prejudice",
       "author": "Jane Austen",
-      "image_url": "https://example.com/pride-and-prejudice.jpg",
+      "image_url": "https://i5.walmartimages.com/asr/4b16cc62-479f-4ce1-a527-bcb43fc2fea6_1.ac98b29a1157aa5008fb80bfb23ed1af.jpeg",
       "description": "A romantic novel that explores the themes of love and class.",
       "rating": 4.6,
       "price": 9.99,
-      "review": "Witty and romantic; Austen's best work."
+      "review": "Witty and romantic; Austen's best work.",
+      "type": "Deals"
   },
   {
       "title": "The Catcher in the Rye",
       "author": "J.D. Salinger",
-      "image_url": "https://example.com/catcher-in-the-rye.jpg",
+      "image_url": "https://www.calmsage.com/wp-content/uploads/2020/05/the-Little-Book-Of-Psychology.png",
       "description": "A novel about teenage rebellion and alienation.",
       "rating": 4.2,
       "price": 10.50,
-      "review": "A timeless exploration of adolescence."
+      "review": "A timeless exploration of adolescence.",
+      "type": "Books"
   },
   {
       "title": "Moby Dick",
       "author": "Herman Melville",
-      "image_url": "https://example.com/moby-dick.jpg",
+      "image_url": "https://fourminutebooks.com/wp-content/uploads/2020/11/psychology-books-9.jpg",
       "description": "An epic tale of obsession and revenge on the high seas.",
       "rating": 4.1,
       "price": 12.00,
-      "review": "A challenging yet rewarding read."
+      "review": "A challenging yet rewarding read.",
+      "type": "Books"
   },
   {
       "title": "War and Peace",
       "author": "Leo Tolstoy",
-      "image_url": "https://example.com/war-and-peace.jpg",
+      "image_url": "https://www.onlinepsychologydegree.info/wp-content/uploads/2020/01/41mPlP7N50L._SX331_BO1204203200_.jpg",
       "description": "A historical novel that weaves together personal and political narratives.",
       "rating": 4.4,
       "price": 14.99,
-      "review": "A masterpiece of world literature."
+      "review": "A masterpiece of world literature.",
+      "type": "Books"
   },
   {
       "title": "The Hobbit",
       "author": "J.R.R. Tolkien",
-      "image_url": "https://example.com/the-hobbit.jpg",
+      "image_url": "https://m.media-amazon.com/images/P/0310366070.01._SCLZZZZZZZ_SX500_.jpg",
       "description": "A fantasy adventure that introduces the world of Middle-earth.",
       "rating": 4.6,
       "price": 8.99,
-      "review": "A delightful journey for readers of all ages."
+      "review": "A delightful journey for readers of all ages.",
+      "type": "E-Books"
   },
   {
       "title": "Fahrenheit 451",
       "author": "Ray Bradbury",
-      "image_url": "https://example.com/fahrenheit-451.jpg",
+      "image_url": "https://m.media-amazon.com/images/P/1118348117.01._SCLZZZZZZZ_SX500_.jpg",
       "description": "A dystopian novel about a future where books are banned.",
       "rating": 4.3,
       "price": 11.50,
-      "review": "A powerful commentary on censorship."
+      "review": "A powerful commentary on censorship.",
+      "type": "E-Books"
   },
   {
       "title": "Brave New World",
       "author": "Aldous Huxley",
-      "image_url": "https://example.com/brave-new-world.jpg",
+      "image_url": "https://d28hgpri8am2if.cloudfront.net/book_images/cvr9781439149959_9781439149959_hr.jpg",
       "description": "A dystopian story about a technologically advanced society.",
       "rating": 4.5,
       "price": 12.00,
-      "review": "Provocative and disturbing in its relevance."
+      "review": "Provocative and disturbing in its relevance.",
+      "type": "Audio"
   },
   {
       "title": "The Alchemist",
       "author": "Paulo Coelho",
-      "image_url": "https://example.com/the-alchemist.jpg",
+      "image_url": "https://2f96be1b505f7f7a63c3-837c961929b51c21ec10b9658b068d6c.ssl.cf2.rackcdn.com/products/028389.jpg",
       "description": "A philosophical tale about pursuing one's dreams.",
       "rating": 4.7,
       "price": 9.99,
-      "review": "Inspirational and beautifully written."
+      "review": "Inspirational and beautifully written.",
+      "type": "Audio"
   },
   {
       "title": "Jane Eyre",
       "author": "Charlotte Brontë",
-      "image_url": "https://example.com/jane-eyre.jpg",
+      "image_url": "https://cdn2.penguin.com.au/covers/original/9780241225929.jpg",
       "description": "A gothic romance novel about love and independence.",
       "rating": 4.4,
       "price": 10.50,
-      "review": "A compelling narrative of strength and resilience."
+      "review": "A compelling narrative of strength and resilience.",
+      "type": "Events"
   },
   {
       "title": "The Picture of Dorian Gray",
       "author": "Oscar Wilde",
-      "image_url": "https://example.com/picture-of-dorian-gray.jpg",
+      "image_url": "https://s2982.pcdn.co/wp-content/uploads/2021/02/the-history-of-the-ancient-world.jpg.optimal.jpg",
       "description": "A philosophical novel exploring vanity and moral duplicity.",
       "rating": 4.3,
       "price": 11.99,
-      "review": "Wilde's wit shines in this timeless tale."
+      "review": "Wilde's wit shines in this timeless tale.",
+      "type": "Education"
   },
   {
       "title": "The Brothers Karamazov",
       "author": "Fyodor Dostoevsky",
-      "image_url": "https://example.com/brothers-karamazov.jpg",
+      "image_url": "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781416554950/harry-a-history-9781416554950_hr.jpg",
       "description": "A profound exploration of faith, free will, and morality.",
       "rating": 4.5,
       "price": 13.50,
-      "review": "A deep and challenging read."
+      "review": "A deep and challenging read.",
+      "type": "Interests"
   },
   {
       "title": "The Road",
       "author": "Cormac McCarthy",
-      "image_url": "https://example.com/the-road.jpg",
+      "image_url": "https://allthatsinteresting.com/wordpress/wp-content/uploads/2019/11/age-of-augustus-cover.png",
       "description": "A post-apocalyptic tale of survival and love.",
       "rating": 4.4,
       "price": 12.99,
-      "review": "Haunting and beautifully written."
+      "review": "Haunting and beautifully written.",
+      "type": "Role"
   },
   {
       "title": "The Kite Runner",
       "author": "Khaled Hosseini",
-      "image_url": "https://example.com/the-kite-runner.jpg",
+      "image_url": "https://fourminutebooks.com/wp-content/uploads/2019/03/best-finance-books-think-and-grow-rich.jpg",
       "description": "A story of friendship and redemption set in Afghanistan.",
       "rating": 4.7,
       "price": 11.50,
-      "review": "Emotionally gripping and beautifully told."
+      "review": "Emotionally gripping and beautifully told.",
+      "type": "Work"
   },
   {
       "title": "The Book Thief",
       "author": "Markus Zusak",
-      "image_url": "https://example.com/the-book-thief.jpg",
+      "image_url": "https://fourminutebooks.com/wp-content/uploads/2019/03/best-finance-books-i-will-teach-you-to-be-rich.jpg",
       "description": "A story narrated by Death about a girl in Nazi Germany.",
       "rating": 4.8,
       "price": 13.00,
-      "review": "Unique and heart-wrenching."
+      "review": "Unique and heart-wrenching.",
+      "type": "Work"
   },
   {
       "title": "The Da Vinci Code",
       "author": "Dan Brown",
-      "image_url": "https://example.com/da-vinci-code.jpg",
+      "image_url": "https://fourminutebooks.com/wp-content/uploads/2019/03/best-finance-books-the-millionaire-fastlane.jpg",
       "description": "A thriller that blends history, art, and conspiracy.",
       "rating": 4.2,
       "price": 9.99,
-      "review": "A fast-paced and engaging read."
+      "review": "A fast-paced and engaging read.",
+      "type": "Work"
   },
   {
       "title": "The Catch-22",
       "author": "Joseph Heller",
-      "image_url": "https://example.com/catch-22.jpg",
+      "image_url": "https://fourminutebooks.com/wp-content/uploads/2019/03/best-finance-books-i-will-teach-you-to-be-rich.jpg",
       "description": "A satirical novel about the absurdity of war.",
       "rating": 4.5,
       "price": 10.99,
-      "review": "Clever and thought-provoking."
+      "review": "Clever and thought-provoking.",
+      "type": "Role"
   },
   {
       "title": "The Perks of Being a Wallflower",
       "author": "Stephen Chbosky",
-      "image_url": "https://example.com/perks-of-being-a-wallflower.jpg",
+      "image_url": "https://www.luckymojito.com/wp-content/uploads/2019/05/best-personal-finance-books-512x1024.jpg",
       "description": "A coming-of-age story told through letters.",
       "rating": 4.4,
       "price": 12.00,
-      "review": "Relatable and heartfelt."
+      "review": "Relatable and heartfelt.",
+      "type": "Role"
   },
   {
       "title": "Little Fires Everywhere",
       "author": "Celeste Ng",
-      "image_url": "https://example.com/little-fires-everywhere.jpg",
+      "image_url": "https://cdn.hackr.io/uploads/posts/attachments/life-3-0-being-human-in-the-age-of-artificial-intelligence1.jpg",
       "description": "A novel about family dynamics and social issues.",
       "rating": 4.5,
       "price": 11.99,
-      "review": "Compelling and thought-provoking."
+      "review": "Compelling and thought-provoking.",
+      "type": "Deals"
   },
   {
       "title": "Circe",
       "author": "Madeline Miller",
-      "image_url": "https://example.com/circe.jpg",
+      "image_url": "https://introducingbooks.com/files/2018/11/9781785785160.jpg",
       "description": "A retelling of the story of Circe, a figure from Greek mythology.",
       "rating": 4.6,
       "price": 13.50,
-      "review": "Richly woven and enchanting."
+      "review": "Richly woven and enchanting.",
+      "type": "Deals"
   },
   {
       "title": "The Night Circus",
       "author": "Erin Morgenstern",
-      "image_url": "https://example.com/night-circus.jpg",
+      "image_url": "https://fivebooks.com/app/uploads/2015/11/0993211623.01.LZ_-314x471.jpg",
       "description": "A magical tale of a competition between two young illusionists.",
       "rating": 4.5,
       "price": 14.99,
-      "review": "Visually stunning and imaginative."
+      "review": "Visually stunning and imaginative.",
+      "type": "Deals"
   }
 ]
 }
