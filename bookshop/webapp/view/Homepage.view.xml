@@ -113,9 +113,9 @@
                                         <!-- <Label text="Price" class="sapUiTinyMarginEnd priceLabelStyle" ></Label> -->
                                         <Text text="$ {price}" class="priceTextSytle" />
                                     </HBox>
-                                    <HBox alignContent="Center">
+                                    <HBox alignContent="Center" id="ratingTextId">
                                         <Label text="Rating" class="sapUiTinyMarginEnd priceLabelStyle" ></Label>
-                                        <Text text="{rating}"  class="ratingTextSytle" />
+                                        <Text text="{path: 'rating', formatter: '.onRatingStyle'}" class="highRatingTextSytle" />
                                     </HBox>
 
                                 </VBox>

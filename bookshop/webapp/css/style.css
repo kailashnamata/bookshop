@@ -186,8 +186,14 @@
     font-weight: bold;
 }
 
-.ratingTextSytle {
+.highRatingTextSytle {
     color: green;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.lowRatingTextSytle {
+    color: red;
     font-size: 16px;
     font-weight: bold;
 }
