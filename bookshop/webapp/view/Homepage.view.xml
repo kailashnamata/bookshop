@@ -32,7 +32,13 @@
 
                                 <ToolbarSpacer/>
 
-                                <SearchField width="30%" liveChange=".onSearch" class="sapUiSmallMarginEnd" />
+                                <SearchField width="30%" id="searchField" liveChange=".onSearch" suggest=".onSuggest" suggestionItems="{
+				path: '/booksData',
+				sorter: { path: 'title' }
+			}" enableSuggestions="true" class="sapUiSmallMarginEnd" >
+            <SuggestionItem text="{title}"  />
+
+                                 </SearchField>
 
                                 <HBox class="basketHBoxStyle" >
                                     <Button text="My Basket" type="Unstyled" class="basketButtonStyle" />
@@ -92,7 +98,7 @@
                         <f:customLayout>
                             <grid:GridBasicLayout gridAutoFlow="Column" />
                         </f:customLayout>
-                        <f:GridListItem class="gridContent" >
+                        <f:GridListItem class="gridContent" type="Active" press="onShowBookDetails" >
                             <VBox class="sapUiSmallMargin">
                                 <layoutData>
                                     <FlexItemData growFactor="1" shrinkFactor="0" /> <!-- Don't shrink below minimum size. Fill space if available. -->
