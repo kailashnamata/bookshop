@@ -11,7 +11,34 @@ function (Controller, Filter, FilterOperator, SuggestionItem, JSONModel) {
     return Controller.extend("bookshop.controller.Homepage", {
         onInit: function () {
 			this.getView().byId("searchField").setEnableSuggestions(false);
+			this._placeholders = [
+                "Search for Books",
+                "Search for Audiobooks",
+                "Search for E-Books",
+                "Search for PDFs"
+            ];
+            this._currentIndex = 0;
+
+            // Set the initial placeholder
+            this._updatePlaceholder();
+
+            // Start the interval to change the placeholder
+            this._startPlaceholderChangeInterval();
         },
+
+		_updatePlaceholder: function () {
+            var oSearchField = this.byId("searchField");
+            oSearchField.setPlaceholder(this._placeholders[this._currentIndex]);
+        },
+
+        _startPlaceholderChangeInterval: function () {
+            var oController = this;
+            setInterval(function () {
+                oController._currentIndex = (oController._currentIndex + 1) % oController._placeholders.length;
+                oController._updatePlaceholder();
+            }, 2000); // 2 seconds
+        },
+		
 		onAfterRendering: function(){
 			var aFilters = [];
 			var filter = new Filter("type", FilterOperator.Contains, "New Arrival");
