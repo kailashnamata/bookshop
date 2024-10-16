@@ -16,16 +16,19 @@ function (Controller, Filter, FilterOperator, SuggestionItem, JSONModel) {
 			var aFilters = [];
 			var filter = new Filter("type", FilterOperator.Contains, "New Arrival");
 			aFilters.push(filter);
+			this.getView().getModel().setProperty("/tabBooksData", aFilters);
 
 			// update list binding
 			var oList = this.byId("gridList");
 			var oBinding = oList.getBinding("items");
 			oBinding.filter(aFilters, "Application");
+			this.getView().getModel().setProperty("/selectedTab", "New Arrival");
 		},
 
         onTabSelection: function(oEvent) {
 			var tabText = oEvent.getSource().oSelectedItem.mProperties.text;
             this.getView().byId("tabTitle").setText(oEvent.getSource().oSelectedItem.mProperties.text);
+			this.getView().getModel().setProperty("/selectedTab", oEvent.getSource().oSelectedItem.mProperties.text);
 			// add filter for search
 			var aFilters = [];
 			if (tabText && tabText.length > 0) {
@@ -42,18 +45,25 @@ function (Controller, Filter, FilterOperator, SuggestionItem, JSONModel) {
 
         onSearch: function (oEvent) {
 			this.getView().byId("searchField").setEnableSuggestions(true);
-			// add filter for search
-			var aFilters = [];
-			var sQuery = oEvent.getSource().getValue();
-			if (sQuery && sQuery.length > 0) {
-				var filter = new Filter("title", FilterOperator.Contains, sQuery);
-				aFilters.push(filter);
-			}
+				// Retrieve the current filtered data based on the selected tab
+				var aFilteredData = this.getView().getModel().getProperty("/tabBooksData");
+				// Add filter for search
+				var aFilters = [];
+				var sQuery = oEvent.getSource().getValue();
+				if (sQuery && sQuery.length > 0) {
+					var filter = new Filter("title", FilterOperator.Contains, sQuery);
+					aFilters.push(filter);
+				}
 
-			// update list binding
-			var oList = this.byId("gridList");
-			var oBinding = oList.getBinding("items");
-			oBinding.filter(aFilters, "Application");
+				if (aFilteredData && aFilteredData.length > 0) {
+					// Create a new filter array based on the tab selection
+					var tabFilter = new Filter("type", FilterOperator.Contains, this.getView().getModel().getProperty("/selectedTab"));
+					aFilters.push(tabFilter);
+				}
+				// Update list binding with the combined filters
+				var oList = this.byId("gridList");
+				var oBinding = oList.getBinding("items");
+				oBinding.filter(aFilters, "Application");
 		},
 
 		onSuggest: function (event) {
@@ -61,6 +71,7 @@ function (Controller, Filter, FilterOperator, SuggestionItem, JSONModel) {
 			this.oSF = this.getView().byId("searchField");
 			var sValue = event.getParameter("suggestValue"),
 				aFilters = [];
+			var aFilteredData = this.getView().getModel().getProperty("/tabBooksData");
 			if (sValue) {
 				aFilters = [
 					new Filter([
@@ -69,6 +80,12 @@ function (Controller, Filter, FilterOperator, SuggestionItem, JSONModel) {
 						})
 					], false)
 				];
+			}
+
+			if (aFilteredData && aFilteredData.length > 0) {
+				// Create a new filter array based on the tab selection
+				var tabFilter = new Filter("type", FilterOperator.Contains, this.getView().getModel().getProperty("/selectedTab"));
+				aFilters.push(tabFilter);
 			}
 
 			this.oSF.getBinding("suggestionItems").filter(aFilters);
